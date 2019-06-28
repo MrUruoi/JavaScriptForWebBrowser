@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+
+    <!-- 1 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      console.log($('li').constructor);
+      var lis = $('li');
+      console.log(lis.constructor);
+      console.log(lis[0].constructor);
+
+      console.log("------------");
+
+      console.log($('li').length);
+
+      console.log("------------");
+
+      $('li').css('color', 'blue').css('text-decoration', 'underline');
+      $(lis[0]).css('color', 'tomato');
+
+    </script> -->
+
+    <!-- 2 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      var lis = $('li');
+      lis.map(function(index, elem){
+        console.log(index, elem);
+        $(elem).css('color', 'tomato');
+      });
+
+    </script>
+
+
+  </body>
+</html>

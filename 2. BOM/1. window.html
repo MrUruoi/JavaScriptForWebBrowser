@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript">
+
+
+      // window
+      //   -- DOM
+      //   -- BOM
+      //   -- javascript
+      //
+
+
+      // 1
+      // window.alert("aa");
+      // alert("aa");
+
+
+
+
+    </script>
+
+  </head>
+
+  <body>
+    <input type="button" onclick="f1('aaa')" value="testBtn1">
+    <input type="button" onclick="f2('aaa')" value="testBtn2">
+    <input type="button" onclick="f3('id?')" value="testBtn3">
+    <script type="text/javascript">
+      //2
+      function f1(a){
+        alert(a);
+      }
+
+      //3
+      function f2(a){
+        if( confirm(a) )
+          alert("o");
+        else
+          alert("X");
+      }
+
+      //4
+      function f3(a){
+        if( prompt(a) === "uruoi")
+          alert("o");
+        else
+          alert("X");
+      }
+
+    </script>
+  </body>
+</html>

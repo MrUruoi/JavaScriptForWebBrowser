@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <!-- 1 -->
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li id="testId">3</li>
+    </ul>
+
+    <script type="text/javascript">
+      var li = document.getElementById('testId');
+      console.log(li.constructor.name);
+      var lis = document.getElementsByTagName('li')
+      console.log(lis.constructor.name);
+      console.log("-------------------------------");
+    </script>
+    <hr>
+
+
+    <!-- 2 -->
+    <a id="anchor" href="#">anchor</a>
+    <ul>
+      <li>1</li>
+      <li id="list">2</li>
+    </ul>
+    <input type="button" id="button" value="button">
+    <script type="text/javascript">
+      var target = document.getElementById('anchor');
+      console.log(target.constructor.name);
+      target.href="http://google.com";
+
+      var target = document.getElementById('list');
+      console.log(target.constructor.name);
+      target.type="square";
+
+      var target = document.getElementById('button');
+      console.log(target.constructor.name);
+
+    </script>
+
+    <!-- 3 DOM Tree-->
+
+  </body>
+</html>
