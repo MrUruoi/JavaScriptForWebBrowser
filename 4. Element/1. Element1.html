@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      window.onload = function(){
+
+          var tag1 = document.getElementById('testId');
+
+          // tagName
+          console.log(tag1.tagName);
+          // read only
+          // document.getElementById('testId').tagName ="testId2";
+
+          // id
+          console.log(tag1.id);
+          tag1.id ="testId2";
+          console.log(tag1.id);
+
+          // className
+          console.log(tag1.className);
+          tag1.className = "testClass2";
+          console.log(tag1.className);
+
+          console.log("--- classList ---");
+          // classList
+          var tag3 = document.getElementById('testId3');
+          console.log(tag3.classList);
+          console.log(tag3.classList.length);
+          console.log(tag3.classList[0]);
+          console.log(tag3.classList[1]);
+          console.log(tag3.classList[2]);
+          console.log(tag3.classList[3]);
+
+          console.log("--- add(), remove() ---");
+          tag3.classList.add("!!");
+          console.log(tag3.classList[3]);
+          tag3.classList.remove("!!");
+          console.log(tag3.classList[3]);
+
+          console.log("--- toggle() ---");
+          tag3.classList.toggle("!!");
+          console.log(tag3.classList[3]);
+          tag3.classList.toggle("!!");
+          console.log(tag3.classList[3]);
+
+      };
+
+    </script>
+  </head>
+  <body>
+
+    <ul>
+      <li id="testId" class="testClass">1</li>
+      <li>2</li>
+      <li id="testId3" class="test Class 3">3</li>
+    </ul>
+
+  </body>
+</html>

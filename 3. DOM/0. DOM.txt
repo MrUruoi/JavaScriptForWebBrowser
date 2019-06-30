@@ -1,0 +1,10 @@
+DOM(Document Object Model)
+
+document
+ |- HTMLElement
+    |- HTMLHeadElement
+    |- HTMLLIElement
+    |- HTMLInputElement
+    |- HTMLCollection
+    |- ...
+ |- xml...

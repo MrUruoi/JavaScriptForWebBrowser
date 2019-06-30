@@ -1,0 +1,17 @@
+BOM(Browser Object Model)
+
+BOMは、ウェブブラウザと関係のあるオブジェクトの集合。
+
+window
+ |- location
+ |- navigator
+ |- history
+ |- screen
+ |- document(DOM)
+ |- ...
+
+ location: 住所に関する
+ navigator: ブラウザに関する
+ screen: OSの画面の属性
+ document:
+ history:

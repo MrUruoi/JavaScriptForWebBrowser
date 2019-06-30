@@ -1,0 +1,14 @@
+Element
+
+ |- tagName
+ |- id
+ |- className
+ |- classList
+    |- length
+    |- add()
+    |- remove()
+    |- toggle()
+    |- ...
+ |- ...
+
+ 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      window.onload = function(){
+        var header1 = document.querySelector('#header1');
+        var header2 = document.querySelectorAll('.header2');
+        console.log(header1.innerHTML);
+
+        console.log(header2);
+        for(var i=0; i<header2.length; i++){
+          header2[i].style.color='tomato';
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+
+    <h1 id="header1">1</h1>
+    <h1 class="header2">2</h1>
+    <h1 class="header2">2</h1>
+
+  </body>
+</html>
