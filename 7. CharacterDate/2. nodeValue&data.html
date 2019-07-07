@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>testTitle</title>
+    <script type="text/javascript">
+
+      window.onload = function(){
+
+        var t = document.getElementById('target').firstChild;
+        console.log(t.nodeValue);
+        console.log(t.data);
+        console.log('---------');
+
+        t.nodeValue = 'one';
+        t.data = 'One';
+
+      }
+
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li id="target">1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </body>
+</html>

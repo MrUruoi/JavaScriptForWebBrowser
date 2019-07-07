@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      function getInnerHTML(){
+        var target = document.getElementById('target');
+        alert(target.innerHTML);
+      }
+
+      function setInnerHTML(){
+        var target = document.getElementById('target');
+        target.innerHTML = '<li>one</li><li>two</li><li>three</li>';
+      }
+
+      function getOuterHTML(){
+        var target = document.getElementById('target');
+        alert(target.outerHTML);
+      }
+
+      function setOuterHTML(){
+        var target = document.getElementById('target');
+        target.outerHTML = '<ol><li>1</li><li>2</li><li>3</li></ol>';
+      }
+
+
+    </script>
+  </head>
+  <body>
+
+    <ul id="target">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <input type="button" value="getInnerHTML" onclick="getInnerHTML()">
+    <input type="button" value="setInnerHTML" onclick="setInnerHTML()"><br>
+
+    <input type="button" value="getOuterHTML" onclick="getOuterHTML()">
+    <input type="button" value="setOuterHTML" onclick="setOuterHTML()"><br>
+  </body>
+</html>

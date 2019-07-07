@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>testTitle</title>
+    <script type="text/javascript">
+
+      window.onload = function(){
+
+        var t1 = document.getElementById('target1').firstChild;
+        console.log(t1);
+        console.log(t1.firstChild);
+        console.log(t1.firstChild.nodeValue);
+        console.log('--------------');
+
+        var t2 = document.getElementById('target2').firstChild;
+        console.log(t2);
+        console.log(t2.nextSibling);
+        console.log(t2.nextSibling.firstChild);
+        console.log(t2.nextSibling.firstChild.nodeValue);
+      }
+
+    </script>
+  </head>
+  <body>
+    <p id="target1"><span>Hello1</span></p>
+    <p id="target2">
+      <span>Hello2</span>
+    </p>
+  </body>
+</html>

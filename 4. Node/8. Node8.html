@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      function beforebegin(){
+        var target = document.getElementById('target');
+        target.insertAdjacentHTML('beforebegin', '<h1>insertAdjacentHTML</h1>');
+      }
+
+      function afterbegin(){
+        var target = document.getElementById('target');
+        target.insertAdjacentHTML('afterbegin', '<li>1</li>');
+      }
+
+      function beforeend(){
+        var target = document.getElementById('target');
+        target.insertAdjacentHTML('beforeend', '<li>3</li>');
+      }
+
+      function afterend(){
+        var target = document.getElementById('target');
+        target.insertAdjacentHTML('afterend', '<h1>insertAdjacentHTML</h1>');
+      }
+
+
+    </script>
+  </head>
+  <body>
+
+    <ul id="target">
+      <li>2</li>
+    </ul>
+
+    <input type="button" value="beforebegin" onclick="beforebegin()">
+    <input type="button" value="afterbegin" onclick="afterbegin()"><br>
+
+    <input type="button" value="beforeend" onclick="beforeend()">
+    <input type="button" value="afterend" onclick="afterend()"><br>
+  </body>
+</html>

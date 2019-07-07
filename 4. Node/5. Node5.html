@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      function testRemoveChild(){
+
+        var target = document.getElementById('target');
+        target.parentNode.removeChild(target);
+
+      }
+
+      function testReplaceChild(){
+
+        var a = document.createElement('a');
+        a.setAttribute('href', '#');
+        a.appendChild(document.createTextNode('Three'));
+
+        var target = document.getElementById('target');
+        target.replaceChild(a, target.firstChild);
+
+      }
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li id="target">3</li>
+    </ul>
+    <input type="button" value="removeChild" onclick="testRemoveChild()">
+    <input type="button" value="replaceChild" onclick="testReplaceChild()">
+  </body>
+</html>
