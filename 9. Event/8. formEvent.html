@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>testTitle</title>
+
+    <script type="text/javascript">
+
+      window.onload = function(){
+        // 1
+        var t1 = document.getElementById('t1');
+        t1.addEventListener('submit', function(e){
+          if(document.getElementById('name').value.length===0){
+            alert('입력 ㄱ');
+            e.preventDefault();
+          }
+        });
+
+        // 2
+        var t2 = document.getElementById('t2');
+        t2.addEventListener('change',function(e){
+          document.getElementById('result').innerHTML = e.target.value;
+        });
+
+        // 3
+        var t3 = document.getElementById('t3');
+
+        t3.addEventListener('blur', function(){
+          alert('blur!');
+        });
+
+        t3.addEventListener('focus', function(){
+          alert('focus!');
+        });
+
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <!-- 1 -->
+    <form  id="t1" action="test1.html">
+      <label for="name">name</label>
+      <input id="name" type="name" />
+      <input type="submit" value="submit">
+    </form><br><br>
+
+    <!-- 2 -->
+    <p id="result"></p>
+    <input type="name" id="t2"><br><br>
+
+    <!-- 3 -->
+    <input id="t3" type="name" />
+
+  </body>
+</html>

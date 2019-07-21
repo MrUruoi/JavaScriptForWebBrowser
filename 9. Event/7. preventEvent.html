@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>testTitle</title>
+
+
+
+    <script type="text/javascript">
+
+      window.onload = function(){
+
+        document.getElementById('a2').onclick = function(e){
+          if(document.getElementById('ck').checked) return false;
+        }
+
+        document.getElementById('a3').addEventListener('click', function(e){
+          if(document.getElementById('ck').checked)
+            e.preventDefault();
+        });
+
+        var h = document.getElementById('h');
+        var handler = function(){
+          alert('!!!');
+        };
+        h.addEventListener('click',handler);
+        h.removeEventListener('click',handler);
+
+
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <label>Prevent event</label>
+    <input id="ck" type="checkbox"><br>
+
+    <a href="http://www.google.com" onclick="if(document.getElementById('ck').checked) return false;">inline</a>
+    <a id="a2" href="http://www.google.com" >property</a>
+    <a id="a3" href="http://www.google.com" >addEventListener</a><br><br>
+
+
+    <h1 id="h">click!</h1>
+  </body>
+</html>
